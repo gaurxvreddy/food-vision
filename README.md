@@ -23,13 +23,8 @@ The Accuracy aquired by DeepFood was **77.4%** and our model's **85%** . Differe
 Finally after training the model, I have exported it as `.hdf5` files and then integrated it with **Streamlit Web App**. 
 
 **Streamlit** turns data scripts into shareable web apps in minutes. 
-Once I got the App working on my local device I then deployed it using Streamlit’s invite-only **[sharing feature](https://streamlit.io/sharing)**
-
-### Check the [deployed app](https://share.streamlit.io/gauravreddy08/food-vision/main/food-vision/app.py), or the [demo video](https://github.com/gauravreddy08/food-vision/blob/main/extras/app%20video.mp4?raw=true)
 
 > The app may take a couple of seconds to load for the first time, but it works perfectly fine.
-
-https://user-images.githubusercontent.com/57211163/214333702-7a666c70-3499-470d-8b39-fc37374950ab.mp4
 
 Once an app is loaded, 
 
@@ -41,7 +36,6 @@ Once an app is loaded,
 
 ## Okay Cool, How did you build it ?
 
-> If you actually want to know the Nuts and Bolts how the model was trained check out **[`model-training.ipynb`](https://github.com/gauravreddy08/food-vision/blob/main/model_training.ipynb) Notebook**
 
 1. #### Imported Food101 dataset from **[Tensorflow Datasets](https://www.tensorflow.org/datasets)** Module.
 
@@ -66,8 +60,6 @@ Once an app is loaded,
 
    This part tool the longest. In Deep Learning, you have to know which nob does what. Once yoy get experienced you'll what nobs you should turn to get the results you want. 
    **Architecture** : **`EffficientNetB1`**
-   
-> Again if you want to dive deeper on how the model was trained check out **[`model-training.ipynb`](https://github.com/gauravreddy08/food-vision/blob/main/model_training.ipynb) Notebook**
 
 6. #### Evaluating and Deploying out Model to Streamlit
 
@@ -76,8 +68,6 @@ Once an app is loaded,
    Training and evaluating a model on train and test data is cool, but making predictions on our own realtime images is another level.
 
    Once we are satisfied with the results, we can export the model as a `.hdf5`  which can be used in future for model deployment.
-
-Once the model is exported then there comes the Deployment part. Check out  **[`app.py`](https://github.com/gauravreddy08/food-vision/blob/main/food-vision/app.py)** to get more insight on How I integrated it with Streamlit.
 
 ## Breaking down the repo
 
@@ -91,11 +81,4 @@ At first glance the files in the repo may look intimidating and overwhelming. To
 * `requirements.txt`  : List of required dependencies required to run `app.py`
 * `extras/`  : Has some miscellaneous images and files used to write this README Document
 
-## Questions ?
-
-Post your queries on the [**Discussions**](https://github.com/gauravreddy08/food-vision/discussions) tab, else contact me : gauravreddy008@gmail.com
-
-
-
-######                                             *Inspired by **Daniel Bourke's** CS329s Lecture*
 
